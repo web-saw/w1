@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Work</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script>
+jQuery(document).ready(function($){
+
+$('.text_copy_link').click(function() {
+		var $text_copy = $(this);
+	    var $temp = $("<input>");
+	    $("body").append($temp);
+	    $temp.val($text_copy.text()).select();
+	    document.execCommand("copy");
+	    $temp.remove();
+	    $('.copy_link_mess').fadeIn(400);
+		setTimeout(function(){$('.copy_link_mess').fadeOut(400);},5000);
+
+});
+});
+</script>
+</head>
+<body>
+	
+<div class="copy_link_mess">Скопировано в буфер обмена</div>
+	<div class="wrapper">
+		<div class="top">
+			<a href="#"><img class="x100"src="../img/x100.jpg"></a> <hr>
+			<a href="#"><img class="x100"src="../img/x100.jpg"></a><hr>
+			<a href="#"><img class="x100"src="../img/x100.jpg"></a> <hr>
+			<a href="#"><img class="x100"src="../img/x100.jpg"></a> <hr>
+		</div>
+		<div class="data__border"></div>
+	
+		<div class="group">
+			<div class="group__items">
+				<h3>Россия</h3>
+				<div class="group__couriers--rus"><br>
+					<h4>Курьер</h4>
+					<a href="#" class="button text_copy_link">couriers_fil_group;<br> SM-RF-Fil-Courier_Read;<span class="button__line button__line--top"></span><span class="button__line button__line--right"></span><span class="button__line button__line--bottom"></span><span class="button__line button__line--left"></span></a>
+				</div>
+			</div>
+			<div class="group__items">
+				<h3>Украина</h3>
+				<div class="group__couriers--ukr"><br>
+					<h4>Курьер</h4>
+					<a href="#" class="button text_copy_link">couriers_fil_group;<br> SM-UA-Fil-Courier_Read;<span class="button__line button__line--top"></span><span class="button__line button__line--right"></span><span class="button__line button__line--bottom"></span><span class="button__line button__line--left"></span></a>
+				</div>
+			</div>
+				<div class="data__border"></div><br>
+			<div class="group__items">
+				<div class="group__cooks--rus">
+					<h4>Повар</h4>
+					<a href="#" class="button text_copy_link">Povor_Fil;<br> SM-RF-Fil-Cook_Read;<span class="button__line button__line--top"></span><span class="button__line button__line--right"></span><span class="button__line button__line--bottom"></span><span class="button__line button__line--left"></span></a>
+				</div>
+			</div>
+
+			<div class="group__items">
+				<div class="group__cooks--ukr">
+					<h4>Повар</h4>
+					<a href="#" class="button text_copy_link">Povor_Fil;<br> SM-UA-Fil-Cook_Read;<span class="button__line button__line--top"></span><span class="button__line button__line--right"></span><span class="button__line button__line--bottom"></span><span class="button__line button__line--left"></span></a>
+				</div>
+			</div>
+					<div class="data__border"></div><br>
+			<div class="group__items">
+				<div class="group__cooks--rus">
+					<h4>Су-шеф</h4>
+					<a href="#" class="button text_copy_link">Su-shef_Fil;<br> SM-RF-Fil-Sushef_Read;<span class="button__line button__line--top"></span><span class="button__line button__line--right"></span><span class="button__line button__line--bottom"></span><span class="button__line button__line--left"></span></a>
+				</div>
+			</div>
+
+			<div class="group__items">
+				<div class="group__cooks--ukr">
+					<h4>Су-шеф</h4>
+					<a href="#" class="button text_copy_link">Su-shef_Fil;<br> SM-UA-Fil-Sushef_Read;<span class="button__line button__line--top"></span><span class="button__line button__line--right"></span><span class="button__line button__line--bottom"></span><span class="button__line button__line--left"></span></a>
+				</div>
+			</div>
+				<div class="data__border"></div><br>
+			<div class="group__items">
+				<div class="group__cooks--rus">
+					<h4>Администратор</h4>
+					<a href="#" class="button text_copy_link">ATT_Fil;<br> k2_users;<br> SM_RF_Fil_Admin_Read;<br> office365-f1;<span class="button__line button__line--top"></span><span class="button__line button__line--right"></span><span class="button__line button__line--bottom"></span><span class="button__line button__line--left"></span></a>
+				</div>
+			</div>
+
+			<div class="group__items">
+				<div class="group__cooks--ukr">
+					<h4>Администратор</h4>
+					<a href="#" class="button text_copy_link">ATT_Fil;<br> k2_users;<br> SM-UA-Fil-Admin_Read;<br> office365-f1;<span class="button__line button__line--top"></span><span class="button__line button__line--right"></span><span class="button__line button__line--bottom"></span><span class="button__line button__line--left"></span></a>
+				</div>
+			</div>
+				<div class="data__border"></div><br>
+			<div class="group__items">
+				<div class="group__cooks--rus">
+					<h4><a id="popup" class="popup-btn" href="javascript:void(0);">Оператор КЦ</a></h4>
+					<a href="#" class="button text_copy_link">CC;<br> Teams Exploratory;<br> $N3L000-C214BE0CP84P;<span class="button__line button__line--top"></span><span class="button__line button__line--right"></span><span class="button__line button__line--bottom"></span><span class="button__line button__line--left"></span></a>
+				</div>
+			</div>
+
+			<div class="group__items">
+				<div class="group__cooks--ukr">
+					<h4>Оператор КЦ</h4>
+					<a href="#" class="button text_copy_link">CC;<br> Teams Exploratory;<br> $N3L000-C214BE0CP84P;<br> $4DT000-V7NFQP3AFHM0;<br> $KMC000-B2I7DEL2SIKA;<span class="button__line button__line--top"></span><span class="button__line button__line--right"></span><span class="button__line button__line--bottom"></span><span class="button__line button__line--left"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+<p><a id="popup" class="popup-btn" href="javascript:void(0);">Open window 1</a></p>
+<p><a id="popup-2" class="popup-btn" href="javascript:void(0);">Open window 2</a></p>
+
+<div class="pop-overlay">
+  <div id="popup-window" class="popup-window">
+    <div class="inner button">
+      <h2>Оператор КЦ</h2>
+      <div class="pop__content">
+      	<div class="data__border"></div><br>
+      	<h3>M/O 365 License</h3>
+      	<p>Microsoft 365 Teams Exploratory</p>
+      </div>
+       <div class="license"><br>
+      	<h3>Сетка</h3>
+      	<div class="plus">+</div>
+      </div>
+       <div class="license"><br>
+      	<h3>1С</h3>
+      	<div class="plus">+</div>
+      </div>
+       <div class="license"><br>
+      	<h3>Iiko</h3>
+      	<div class="plus">+</div>
+      </div>
+       <div class="license"><br>
+      	<h3>Телефония</h3>
+      		<p>Mango</p>
+      		<p>3cx</p><span class="button__line button__line--top"></span><span class="button__line button__line--right"></span><span class="button__line button__line--bottom"></span><span class="button__line button__line--left"></span>
+      </div>
+     
+    </div>
+    <a href="javascript:void(0);" class="btn-close">X</a>
+  </div>
+  
+  <div id="popup-window-2" class="popup-window">
+    <div class="inner">
+      <h4>Release of WordPress 5.1</h4>
+      <p>Near the end of the month, WordPress 5.1 was released, featuring significant stability and performance enhancements as well as the first of the Site Health mechanisms that are in active development. Most prominent is the new warning for sites running long-outdated versions of PHP.</p>
+    </div>
+    <a href="javascript:void(0);" class="btn-close">Close</a>
+  </div>
+</div>
+
+<!--<i class="fa-solid fa-360-degrees"></i>
+	<i class="fa-light fa-arrows-minimize"></i>
+	<i class="fa-duotone fa-check"></i>
+
+
+-->
+
+
+
+<a href="#" class="button text_copy_link">Пользователь добавлен в соответствующие его должности группы в AD<span class="button__line button__line--top"></span><span class="button__line button__line--right"></span><span class="button__line button__line--bottom"></span><span class="button__line button__line--left"></span></a>
+
+<a href="#" class="button text_copy_link">Пользователь добавлен в соответствующие его должности группы в AD и в сетку<span class="button__line button__line--top"></span><span class="button__line button__line--right"></span><span class="button__line button__line--bottom"></span><span class="button__line button__line--left"></span></a>
+<script src="func.js"></script>
+</body>
+</html>
